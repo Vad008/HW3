@@ -9,7 +9,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "Players\\": "Players"
+            "Players\\": "Players",
+            "Teams\\": "Teams"
         }
     },
 

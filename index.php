@@ -9,6 +9,7 @@
 require_once 'vendor/autoload.php';
 
 use Players\Players;
+use Teams\Teams;
 
 $players = new Players();
 $players->setFirstName('Ciro');
@@ -19,20 +20,26 @@ $players->setSkill('80');
 echo 'player:';
 echo $players->__toString();
 
-$players = new Players();
-$players->setFirstName('Karim');
-$players->setLastName('Benzema');
-$players->setAge(29);
-$players->setSkill('85');
+$teams = new Teams();
+$teams->setFirstName('Karim');
+$teams->setLastName('Benzema');
+$teams->setAge(29);
+$teams->setSkill('85');
+$teams->setTeam('Real Madrid');
+$teams->setPosition('Striker');
+$teams->setCost("35 000 000$");
 
 echo "<br>".'player:';
-echo $players->__toString();
+echo $teams->__toString();
 
-$players = new Players();
-$players->setFirstName('Arturo');
-$players->setLastName('Vidal');
-$players->setAge(28);
-$players->setSkill('84');
+$teams= new Teams();
+$teams->setFirstName('Arturo');
+$teams->setLastName('Vidal');
+$teams->setAge(28);
+$teams->setSkill('84');
+$teams->setTeam('Bayern Munich');
+$teams->setPosition('Central Midfilder');
+$teams->setCost("30 000 000$");
 
 echo "<br>".'player:';
-echo $players->__toString();
+echo $teams->__toString();
