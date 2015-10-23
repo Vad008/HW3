@@ -10,6 +10,8 @@ require_once 'vendor/autoload.php';
 
 use Players\Players;
 use Teams\Teams;
+use Country\Country;
+
 
 $players = new Players();
 $players->setFirstName('Ciro');
@@ -32,14 +34,14 @@ $teams->setCost("35 000 000$");
 echo "<br>".'player:';
 echo $teams->__toString();
 
-$teams= new Teams();
-$teams->setFirstName('Arturo');
-$teams->setLastName('Vidal');
-$teams->setAge(28);
-$teams->setSkill('84');
-$teams->setTeam('Bayern Munich');
-$teams->setPosition('Central Midfilder');
-$teams->setCost("30 000 000$");
+$country= new Country();
+$country->setFirstName('Arturo');
+$country->setLastName('Vidal');
+$country->setAge(28);
+$country->setSkill('84');
+$country->setCountry('Chile');
+$country->setPosition('Central Midfilder');
+
 
 echo "<br>".'player:';
-echo $teams->__toString();
+echo $country->__toString();
